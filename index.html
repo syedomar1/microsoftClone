@@ -4,35 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Microsoft – Cloud, Computers, Apps &amp; Gaming</title>
+    <title>Microsoft - Cloud, Computers, Apps &amp; Gaming</title>
 </head>
 <body>
-    <div class="navbar flex justify-between items-center p-4">
+    <div class="container mx-auto">
+    <div class="navbar flex justify-between items-center">
         <div class="flex justify-center items-center md:order-2">
             <div class="hamburger inline-block p-4 cursor-pointer md:hidden">
                 <div class="line h-0.5 w-5 my-1 bg-black"></div>
                 <div class="line h-0.5 w-5 my-1 bg-black"></div>
                 <div class="line h-0.5 w-5 my-1 bg-black"></div>
             </div>
-            <div class="search md:hidden">SearchIcon</div>
+            <div class="search md:hidden w-4 mr-6"><img src="assets/search.svg" alt="Search"></div>
         </div>
-        <div class="logo text-center flex md:order-1">
-            <div>Microsoft</div>
-            <div class="features absolute md:static w-fit bg-gray-200 md:bg-white -translate-x-96 inset-0 md:w-auto md:flex md:mx-4 md:space-x-2 md:translate-x-0">
-            <div class="flex">Microsoft 365</div>
-            <div class="flex">Office</div>
-            <div class="flex">Windows</div>
-            <div class="flex">Surface</div>
-            <div class="flex">Xbox</div>
-            <div class="flex">Support</div>
+        <div class="logo text-center flex md:order-1 text-sm">
+            <div class="flex justify-center"><img class="w-[45%]" src="assets/logo.png" alt="Microsoft"></div>
+            <div class="features absolute md:static w-fit bg-gray-200 md:bg-white -translate-x-96 inset-0 md:w-auto md:flex md:items-center md:mx-4 md:space-x-5 md:translate-x-0">
+            <div class="flex hover:underline hover:underline-offset-8 cursor-pointer">Microsoft 365</div>
+            <div class="flex hover:underline hover:underline-offset-8 cursor-pointer">Office</div>
+            <div class="flex hover:underline hover:underline-offset-8 cursor-pointer">Windows</div>
+            <div class="flex hover:underline hover:underline-offset-8 cursor-pointer">Surface</div>
+            <div class="flex hover:underline hover:underline-offset-8 cursor-pointer">Xbox</div>
+            <div class="flex hover:underline hover:underline-offset-8 cursor-pointer">Support</div>
             </div>
         </div>
-        <div class="cart text-center md:order-3 flex">
-            <div class="search hidden md:block">All Microsoft SearchIcon</div>
-            <div>
-                Cart Account
+        <div class="cart text-center md:order-3 flex text-sm">
+            <div class="search hidden md:block mr-6 hover:underline hover:underline-offset-8 cursor-pointer">All Microsoft</div>
+            <span class="mr-2 hidden md:block hover:underline hover:underline-offset-8 cursor-pointer">Search</span><img class="w-4 mr-4 hidden md:block" src="assets/search.svg" alt="Search">
+            <div class="flex">
+                <span class="mr-2 hidden md:block hover:underline hover:underline-offset-8 cursor-pointer">Cart</span><img class="w-4 h-4 mr-4 mt-1" src="assets/cart.svg" alt="Cart">
+                <span class="mr-2 hidden md:block hover:underline hover:underline-offset-8 cursor-pointer">Account</span><img class="w-4 h-4 mr-4 mt-1" src="assets/user.svg" alt="Account">
             </div>
         </div>
     </div>    
+
+    <div class="slider flex flex-col-reverse md:flex-row bg-[#e6e6e6] mx-2">
+        <div class="left flex flex-col justify-center md:items-baseline py-12">
+            <span class="bg-yellow-500 text-black text-xs font-medium mx-5 px-2.5 py-0.5 w-11 ">New</span>
+            <h1 class="text-2xl font-normal md:text-4xl mx-5">Meet Surface Pro</h1>
+            <p class="w-3/4 mx-5 md:text-left">This laptop's unrivalled flexibility and AI features like Recall and Cocreator, enable you to do more than you ever imagined.</p>
+            <button class="text-white bg-blue-600 px-4 py-2 my-6 font-bold w-32 mx-5">Learn More</button>
+        </div>
+        <div class="right">
+            <img class="w-[60rem] md:w-[64rem]" src="assets/pc.avif" alt="pc">
+        </div>
+    </div>
+
+    <div class="promo space-y-6 md:flex md:justify-center md:items-center md:space-x-4">
+        <div class="item flex flex-col justify-center items-center mt-6">
+            <img class="w-11" src="assets/mic365.svg" alt="365">
+            <a class="text-center hover:underline hover:underline-offset-8 cursor-pointer" href="https://www.microsoft.com/en-in/microsoft-365/buy/compare-all-microsoft-365-products?icid=MSCOM_QL_M365" target="_blank" rel="noopener noreferrer">Choose your Microsoft 365</a>
+        </div>
+        <div class="item flex flex-col justify-center items-center">
+            <img class="w-11" src="assets/xbox.svg" alt="365">
+            <a class="text-center hover:underline hover:underline-offset-8 cursor-pointer" href="https://www.microsoft.com/en-in/microsoft-365/buy/compare-all-microsoft-365-products?icid=MSCOM_QL_M365" target="_blank" rel="noopener noreferrer">Show Xbox</a>
+        </div>
+        <div class="item flex flex-col justify-center items-center">
+            <img class="w-11" src="assets/win11.svg" alt="365">
+            <a class="text-center hover:underline hover:underline-offset-8 cursor-pointer" href="https://www.microsoft.com/en-in/microsoft-365/buy/compare-all-microsoft-365-products?icid=MSCOM_QL_M365" target="_blank" rel="noopener noreferrer">Get Windows 11</a>
+        </div>
+        <div class="item flex flex-col justify-center items-center">
+            <img class="w-11" src= "assets/device.svg" alt="365">
+            <a class="text-center hover:underline hover:underline-offset-8 cursor-pointer" href="https://www.microsoft.com/en-in/microsoft-365/buy/compare-all-microsoft-365-products?icid=MSCOM_QL_M365" target="_blank" rel="noopener noreferrer">Explore Surface devices</a>
+        </div>
+    </div>
+</div>
 </body>
 </html>
